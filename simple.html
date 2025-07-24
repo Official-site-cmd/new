@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms</title>
+
+  <!-- Swiper სტილები -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="galery.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,327;1,327&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="restourant.css">
+    <link rel="stylesheet" href="menu.css">
+
+  
+</head>
+<body>
+<header class="header nav-overlay" style="position: relative; padding: 0; margin: 0;">
+  <!-- Fixed Navbar OVER Carousel -->
+  <nav style="position: absolute; top: 0; left: 0; width: 100%; z-index: 10; background-color: #4D4D4D;">
+    <div class="nav__bar">
+      <div class="logo">
+        <a href="index.html">
+          <img style="width:90px;" src="assets/Artboard 2.png" alt="" />
+        </a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a  href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a style="color: #EDCC78 !important;" href="#">Rooms</a></li>
+      <li><a href="restourant.html">Restaurant</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main style="padding-top: 100px;">
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" 
+   >
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+  <img src="assets/roomcover1.jpg" class="" alt="..." >
+  
+</div>
+      <div class="carousel-item">
+        <img src="rooms/room6.jpg" class="" alt="..." >
+       
+           
+
+      </div>
+      <div class="carousel-item">
+        <img src="rooms/room7.jpg" class="carousel-image" alt="..." >
+        
+        
+      </div>
+       
+      
+    </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<section class="room-gallery">
+  <!-- კარუსელი -->
+  <div class="gallery-container">
+    <div style="height: auto" class="swiper main-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="./rooms/room1.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room1.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room2.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room2.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room3.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room3.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room4.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room4.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room5.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room5.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room6.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room6.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room7.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room7.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room8.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room8.jpg" />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="./rooms/room9.jpg" class="glightbox" data-gallery="room-gallery">
+            <img src="./rooms/room9.jpg" />
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- თაბნიელ სლაიდერი (შეიძლება იგივე დატოვო) -->
+    <div class="swiper thumb-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./rooms/room1.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room2.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room3.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room4.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room5.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room6.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room7.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room8.jpg" /></div>
+        <div class="swiper-slide"><img src="./rooms/room9.jpg" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About us ბლოკი დარჩეს უცვლელად -->
+  <div class="gallery-container about-box">
+    <h1>About Us</h1>
+    <p style="max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: var(--text-light);">
+     Inside, discover 25 double rooms, each offering a tranquil escape with modern amenities — air-conditioning, flat-screen satellite TVs, and cozy seating areas — ideal for unwinding after a day of discovery. But the crown jewel of CNK Hotel is high above the city - Cloud Restaurant — perched on the rooftop — offers more than a meal. It’s an experience.
+    </p>
+  </div>
+</section>
+
+
+ <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <img class="footer_logo" src="./assets/1x/Artboard 1.png" alt="" srcset="">
+          </div>
+          <p style="color: rgba(255, 255, 255, 0.67) !important;
+      font-size: 17px;" class="section__description">
+            Discover a world of comfort, luxury, and adventure with us. Experience the beauty and create unforgettable memories with us.
+          </p>
+         
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="https://cnktourism.com">cnktourism.com</a></li>
+            
+            <li><a href="#">Travel Tips & Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="https://cnktourism.com">tourism service</a></li>
+          
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+<li><a href="mailto:info@cnkhotel.com">info@cnkhotel.com</a></li>
+            <li><a href="mailto:info@goldencoastresort.com">+995555444111</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/profile.php?id=61578034930798" target="_blank"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="https://www.instagram.com/cnk.hotel/?next=%2Fterrace12comtr%2F" target="_blank"><img src="assets/instagram.png" alt="instagram" /></a>
+            
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script src="restourant.js"></script>
+    <script src="manu.js"></script>
+    </main>
+  <!-- Swiper სკრიპტი -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script src="galery.js"></script>
+</body>
+</html>

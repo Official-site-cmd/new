@@ -1,0 +1,64 @@
+.room-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-container {
+  width: 45%;
+  max-width: 600px;
+}
+
+.about-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.about-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #444;
+}
+
+/* ✅ კარუსელის პატარა სურათებს დავამატეთ დაშორება */
+.thumb-slider {
+  height: 100px;
+  margin-top: 20px; /* ეს ხაზი ამატებს დაშორებას */
+}
+
+.thumb-slider .swiper-slide {
+  width: auto;
+  height: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* ✅ მობილურზე გადაყვანა */
+@media (max-width: 768px) {
+  .room-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-container {
+    width: 90%;
+  }
+
+  .about-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-box p {
+    font-size: 0.95rem;
+  }
+}
